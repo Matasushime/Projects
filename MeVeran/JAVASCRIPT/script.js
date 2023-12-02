@@ -6,6 +6,12 @@ menu.addEventListener('click', function(){
 });
 ;
 
+glide.on(['mount.before', 'run'], function() {
+  swipe.move(){
+      slideLeft();
+  }
+});
+
 let sliderImages = document.querySelectorAll(".slide"),
   arrowLeft = document.querySelector("#arrow-left"),
   arrowRight = document.querySelector("#arrow-right"),
